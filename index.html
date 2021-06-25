@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    .container {
+        text-align: center;
+        
+        }
+
+    table.center {
+        margin-left: auto; 
+        margin-right: auto;
+        }
+    table {
+        border: 1px solid black;
+    }       
+</style>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form method="POST" enctype="multipart/form-data" action="/">
+            <table class="center">
+                <!-- First Name row -->
+                <tr>
+                    <td>First Name:</td>
+                    <td>
+                        <input type="text" name="fName">
+                    </td>
+                </tr>
+                
+                <!-- Last Name Row -->
+                <tr>
+                    <td>Last Name:</td>
+                    <td>
+                        <input type="text" name="lName">
+                    </td>
+                </tr>
+            
+                <!-- Email id Row -->
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+            
+                <!-- Password Row -->
+                <tr>
+                    <td>Password:</td>
+                    <td>
+                        <input type="password" name="password">
+                    </td>
+                </tr>
+            
+                <!-- Date of Birth Row -->
+                <tr>
+                    <td>Date Of Birth:</td>
+                    <td>
+                        <input type="date" name="birthdate">
+                    </td>
+                </tr>
+            
+                <!-- Gender Row -->
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="male" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="female" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="others" value="others">
+                        <label for="others">Others</label>
+                    </td>
+                </tr>
+            
+                <!-- Mobile Number Row -->
+                <tr>
+                    <td>Mobile:</td>
+                    <td>
+                        <input type="phone" name="phone">
+                    </td>
+                </tr>
+
+                <!-- Address Row -->
+                <tr>
+                    <td>Address:</td>
+                    <td>
+                        <textarea type="address" name="address" col="30" rows="10"></textarea>
+                    </td>
+                </tr>
+
+                <!-- Submit and reset Row -->
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="submit" placeholder="Submit">&nbsp;&nbsp;
+                        <input type="reset" name="reset" placeholder="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
